@@ -14,4 +14,4 @@ By night, I am a
 
 - Part time book worm
 - Chronic night owl
-- avid Sudoku player
+- Avid Sudoku player
