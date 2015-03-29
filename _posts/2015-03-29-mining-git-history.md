@@ -20,7 +20,7 @@ A well designed and stable architecture also conforms to **OCP** (Open-Closed Pr
 Furthermore, software entities should be “*open for extension but close for modification*". That is to say, a well designed software should have as less modification as possible when a new feature is supposed to be added. In this regard, we can derive the following model to evaluate the quality of architecture design [9].
 
 $$
-f req = N/M
+freq = N/M
 $$
 > **Where:**
 $M$ is the number of commits in which features were added
@@ -42,7 +42,7 @@ Gov.uk Signonotron2 | 0.4865
 
 Table 1: shows the model being applied to various open source projects with $freq$.
 
-From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [18]. However, the f req value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [7].
+From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [8]. However, the f req value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [7].
 
 Although, I think this model is only theoretically effective, due to accidental and essential complexity [7]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
 
@@ -55,3 +55,4 @@ Although, I think this model is only theoretically effective, due to accidental 
   [5]: http://dl.acm.org/citation.cfm?id=2656440 "Software architecture model driven reverse engineering approach to open source software development"
   [6]: https://www.youtube.com/watch?v=Nm8RbKennWg "Gource on publisher alphagov"
   [7]: https://worrydream.com/refs/Brooks-NoSilverBullet.pdf "Essence and accidents of software engineering"
+  [8]: https://www.gov.uk/service-manual/making-software/open-source.html "Using open source software"
