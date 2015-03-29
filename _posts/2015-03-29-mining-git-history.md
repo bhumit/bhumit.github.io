@@ -1,5 +1,6 @@
 ---
-published: false
+layout: post
+title: Can version control history data identify if a system is well architected?
 ---
 
 
@@ -47,6 +48,68 @@ Table 1: shows the model being applied to various open source projects with $fre
 From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [8]. However, the freq value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [7].
 
 Although, I think this model is only theoretically effective, due to accidental and essential complexity [7]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
+
+```java
+import java.io.*;
+import java.util.ArrayList;
+
+public class Main {
+    static ArrayList al = new ArrayList(); // array that contains all record pairs: hash-status
+    static ArrayList addArray = new ArrayList(); // array that contains unique hash whose commit added something
+    static ArrayList changeArray = new ArrayList(); // array that contains unique hash whose commit changed something after adding features
+
+    public static void main(String[] args) {
+        readData();
+        calcAdds();
+        calcChangesInAdds();
+        // get ratio, the lower the better architecture.
+        // since if well formed, theoretically, adding features doesn't require any modification
+        System.out.println("The ratio is: " + (1.0 * changeArray.size() / addArray.size()));
+    }
+
+    private static void readData(){
+            File file = new File("./signonotron2.csv");
+        BufferedReader reader;
+        try{
+            reader = new BufferedReader(new FileReader(file));
+            String tempString;
+            while((tempString = reader.readLine()) != null){
+                al.add(tempString);
+            }
+        }catch (Exception ex){
+
+        }
+    }
+
+    /**
+     * get the hashes of all commits that had added some features
+     */
+    private static void calcAdds(){
+        for(int i =0; i<al.size();i++){
+            String line = al.get(i).toString();
+            String hash = line.substring(0,line.indexOf('\t'));
+            String status = line.substring(line.indexOf('\t')+1, line.length());
+            if(!addArray.contains(hash) && status.equals("added")){
+                addArray.add(hash);
+            }
+        }
+    }
+
+    /**
+     * get the hashes of all commits that had changed something after adding features
+     */
+    private static void calcChangesInAdds(){
+        for(int i =0; i<al.size();i++){
+            String line = al.get(i).toString();
+            String hash = line.substring(0,line.indexOf('\t'));
+            String status = line.substring(line.indexOf('\t')+1, line.length());
+            if(addArray.contains(hash) && status.equals("changed") && !changeArray.contains(hash)){
+                changeArray.add(hash);
+            }
+        }
+    }
+}
+```
 
   [1]: http://swerl.tudelft.nl/twiki/pub/Main/KoenEgelink/Masters_Thesis_Koen_Egelink_PUBLIC_BANNER.pdf "K. Egelink, Multi-Version Software Analysis to Detect Architectural Mismatches."
   [2]: http://www.amazon.co.uk/The-Pragmatic-Programmer-Andrew-Hunt/dp/020161622X "A. Hunt and D. Thomas, The Pragmatic Programmer: From Journeyman to Master."
