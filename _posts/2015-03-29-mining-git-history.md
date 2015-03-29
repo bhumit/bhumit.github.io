@@ -11,8 +11,8 @@ According to Andrew Hunt and David Thomas, a well architectured software design 
 > 2. Developer is tasked or code pull request is submitted.
 > 3. Change is committed to the code base.
 
-This fits tightly to the highly iterative implementation, testing, and maintenance loop [5]. Nevertheless, this iterative process happened later during stages of the product lifecycle as the it became stable . I have created a video which depicts the visualization of the project from the beginning [6]. By visual analysis, we can deduce that, there exists roughly same amount of tests as there are classes. The visualisation shows addition of unit tests, functional tests, integration tests. Through observations, I believe that the Publisher project is very well architected as you can see the separation of concerns just by the visualisation.
-
+This fits tightly to the highly iterative implementation, testing, and maintenance loop [5]. Nevertheless, this iterative process happened later during stages of the product lifecycle as the it became stable . I have created a video which depicts the visualization of the project from the beginning [see below]. By visual analysis, we can deduce that, there exists roughly same amount of tests as there are classes. The visualisation shows addition of unit tests, functional tests, integration tests. Through observations, I believe that the Publisher project is very well architected as you can see the separation of concerns just by the visualisation.
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Nm8RbKennWg/0.jpg)](http://www.youtube.com/watch?v=Nm8RbKennWg)
 A well designed and stable architecture also conforms to **OCP** (Open-Closed Principle), hence, whether a system follows OCP patterns strictly enough is a simple way to evaluate the quality of its architecture design[7]. The *Single-Responsibility Principle* of OCP says that 
 
 > “A class should have only one reason to change”[8]. 
@@ -42,11 +42,9 @@ Gov.uk Signonotron2 | 0.4865
 
 Table 1: shows the model being applied to various open source projects with $freq$.
 
-From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [8]. However, the f req value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [7].
+From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [8]. However, the freq value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [7].
 
 Although, I think this model is only theoretically effective, due to accidental and essential complexity [7]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
-
-
 
   [1]: http://swerl.tudelft.nl/twiki/pub/Main/KoenEgelink/Masters_Thesis_Koen_Egelink_PUBLIC_BANNER.pdf "K. Egelink, Multi-Version Software Analysis to Detect Architectural Mismatches."
   [2]: http://www.amazon.co.uk/The-Pragmatic-Programmer-Andrew-Hunt/dp/020161622X "A. Hunt and D. Thomas, The Pragmatic Programmer: From Journeyman to Master."
@@ -56,3 +54,6 @@ Although, I think this model is only theoretically effective, due to accidental 
   [6]: https://www.youtube.com/watch?v=Nm8RbKennWg "Gource on publisher alphagov"
   [7]: https://worrydream.com/refs/Brooks-NoSilverBullet.pdf "Essence and accidents of software engineering"
   [8]: https://www.gov.uk/service-manual/making-software/open-source.html "Using open source software"
+  
+---
+Here are some internet social media buttons to impress your friends: 
