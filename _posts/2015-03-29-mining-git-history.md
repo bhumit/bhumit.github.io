@@ -31,7 +31,7 @@ $$
 
 As we can see, \\( N \\) is a subset of \\( M \\), therefore, the range should be within 0–1. From the OCP rules, we can deduce that the lower the frequency is, the better architecture is designed.
 
-| Open Source Projects      |\\(freq\\)  |
+| **Open Source Projects**      |**\\(freq\\)**  |
 |:---------------------------|:------:|
 | Ruby Programming Language | 0.6387 |
 | Publisher                 | 0.5783 |
