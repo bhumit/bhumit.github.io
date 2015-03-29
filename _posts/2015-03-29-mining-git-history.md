@@ -12,7 +12,9 @@ According to Andrew Hunt and David Thomas, a well architectured software design 
 > 3. Change is committed to the code base.
 
 This fits tightly to the highly iterative implementation, testing, and maintenance loop [5]. Nevertheless, this iterative process happened later during stages of the product lifecycle as the it became stable . I have created a video which depicts the visualization of the project from the beginning [see below]. By visual analysis, we can deduce that, there exists roughly same amount of tests as there are classes. The visualisation shows addition of unit tests, functional tests, integration tests. Through observations, I believe that the Publisher project is very well architected as you can see the separation of concerns just by the visualisation.
+
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Nm8RbKennWg/0.jpg)](http://www.youtube.com/watch?v=Nm8RbKennWg)
+
 A well designed and stable architecture also conforms to **OCP** (Open-Closed Principle), hence, whether a system follows OCP patterns strictly enough is a simple way to evaluate the quality of its architecture design[7]. The *Single-Responsibility Principle* of OCP says that 
 
 > “A class should have only one reason to change”[8]. 
