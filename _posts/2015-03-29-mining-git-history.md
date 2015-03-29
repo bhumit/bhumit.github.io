@@ -5,50 +5,50 @@ title: Can version control history data identify if a system is well architected
 ---
 
 
-Software repositories contain valuable information that is not only useful to record development history but also to analyse that history. They assist in program understanding, visualization. I looked the distribution of the commits for [AlphaGov Publisher](https://github.com/alphagov/publisher) . An area showing many commits,may have a high development activity. This way we can pinpoint possible ’problem’ modules.[1]
+Software repositories contain valuable information that is not only useful to record development history but also to analyse that history. They assist in program understanding, visualization. I looked the distribution of the commits for [AlphaGov Publisher](https://github.com/alphagov/publisher) . An area showing many commits,may have a high development activity. This way we can pinpoint possible ’problem’ modules.[[1]]
 
-According to Andrew Hunt and David Thomas, a well architectured software design has a critical concept called Orthogonality. They believe, it produces systems that are easy to design, build, test, and extend [2]. This is what Yourdon and Constantine called cohesion [3]. I examined the Publisher project with the help of a visualiser tool called Gource[4]. Upon inspection, I found that, this project contained very well structured module. Developers seem to follow TDD approach. I also observed, after adding a feature, the developer would subsequently test that feature by updating the unit test directory. Also, as this is an Open Source Software, We can see that the common life-cycle of an OSS iteration:
+According to Andrew Hunt and David Thomas, a well architectured software design has a critical concept called Orthogonality. They believe, it produces systems that are easy to design, build, test, and extend [[2]]. This is what Yourdon and Constantine called cohesion [[3]]. I examined the Publisher project with the help of a visualiser tool called Gource [[4]]. Upon inspection, I found that, this project contained very well structured module. Developers seem to follow TDD approach. I also observed, after adding a feature, the developer would subsequently test that feature by updating the unit test directory. Also, as this is an Open Source Software, We can see that the common life-cycle of an OSS iteration:
 
 > 1. Report bug.
 > 2. Developer is tasked or code pull request is submitted.
 > 3. Change is committed to the code base.
 
-This fits tightly to the highly iterative implementation, testing, and maintenance loop [5]. Nevertheless, this iterative process happened later during stages of the product lifecycle as the it became stable . I have created a video which depicts the visualization of the project from the beginning [see below]. By visual analysis, we can deduce that, there exists roughly same amount of tests as there are classes. The visualisation shows addition of unit tests, functional tests, integration tests. Through observations, I believe that the Publisher project is very well architected as you can see the separation of concerns just by the visualisation.
+This fits tightly to the highly iterative implementation, testing, and maintenance loop [[5]]. Nevertheless, this iterative process happened later during stages of the product lifecycle as the it became stable . I have created a video which depicts the visualization of the project from the beginning [see below]. By visual analysis, we can deduce that, there exists roughly same amount of tests as there are classes. The visualisation shows addition of unit tests, functional tests, integration tests. Through observations, I believe that the Publisher project is very well architected as you can see the separation of concerns just by the visualisation.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Nm8RbKennWg" frameborder="0" allowfullscreen></iframe>
 
-A well designed and stable architecture also conforms to **OCP** (Open-Closed Principle), hence, whether a system follows OCP patterns strictly enough is a simple way to evaluate the quality of its architecture design[7]. The *Single-Responsibility Principle* of OCP says that 
+A well designed and stable architecture also conforms to **OCP** (Open-Closed Principle), hence, whether a system follows OCP patterns strictly enough is a simple way to evaluate the quality of its architecture design[[7]]. The *Single-Responsibility Principle* of OCP says that 
 
-> “A class should have only one reason to change”[8]. 
+> “A class should have only one reason to change”[[8]]. 
 
-Furthermore, software entities should be “*open for extension but close for modification*". That is to say, a well designed software should have as less modification as possible when a new feature is supposed to be added. In this regard, we can derive the following model to evaluate the quality of architecture design [9].
+Furthermore, software entities should be “*open for extension but close for modification*". That is to say, a well designed software should have as less modification as possible when a new feature is supposed to be added. In this regard, we can derive the following model to evaluate the quality of architecture design [[9]].
 
 $$
 freq = N/M
 $$
 > **Where:**
-$M$ is the number of commits in which features were added
-$N$ is the number of commits where changes took place while adding features
+$$M$$ is the number of commits in which features were added
+$$N$$ is the number of commits where changes took place while adding features
 
-As we can see, $N$ is a subset of $M$, therefore, the range should be within 0–1. From the OCP rules, we can deduce that the lower the frequency is, the better architecture is designed.
+As we can see, $$N$$ is a subset of $$M$$, therefore, the range should be within 0–1. From the OCP rules, we can deduce that the lower the frequency is, the better architecture is designed.
 
 
 Open Source Projects | $freq$
----------|--------------------------
-Ruby Programming Language | 0.6387
-Publisher | 0.5783
-Gov.uk Frontend | 0.5333
-Gov.uk Transition | 0.6729
-Gov.uk Collections  | 0.4815
-Gov.uk EFG | 0.7132
-Gov.uk Rummager | 0.7244
-Gov.uk Signonotron2 | 0.4865
+------------------|--------------------------
+Ruby Programming Language     | 0.6387
+Publisher       | 0.5783
+Gov.uk Frontend    | 0.5333
+Gov.uk Transition     | 0.6729
+Gov.uk Collections      | 0.4815
+Gov.uk EFG     | 0.7132
+Gov.uk Rummager     | 0.7244
+Gov.uk Signonotron2    | 0.4865
 
 Table 1: shows the model being applied to various open source projects with $freq$.
 
-From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [8]. However, the freq value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [7].
+From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [[8]]. However, the freq value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [[7]].
 
-Although, I think this model is only theoretically effective, due to accidental and essential complexity [7]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
+Although, I think this model is only theoretically effective, due to accidental and essential complexity [[7]]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
 
 ```java
 import java.io.*;
