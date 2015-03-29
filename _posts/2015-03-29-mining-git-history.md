@@ -41,8 +41,7 @@ As we can see, \\( N \\) is a subset of \\( M \\), therefore, the range should b
 | Gov.UK EFG                | 0.7132 |
 | Gov.UK Rummager           | 0.7244 |
 | Gov.UK Signonotron2       | 0.4865 |
-
-Table 1: shows the model being applied to various open source projects with \\(freq\\).
+[Table 1: shows the model being applied to various open source projects with \\(freq\\).]
 
 From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [[8]]. However, the \\(freq\\) value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [[7]].
 
