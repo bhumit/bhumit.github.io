@@ -11,5 +11,5 @@ Cya
 ![alt text](https://raw.githubusercontent.com/bhumit/bhumit.github.io/master/images/Now-Later.jpg "later")
 
 ---
-Here are some internet social media button to impress your friends: 
+Here are some internet social media buttons to impress your friends: 
 

@@ -26,5 +26,5 @@ But...Ultimately, there is *“No Silver Bullet”*.
   [^4]: http://www.jmock.org/oopsla2004.pdf
 
 ---
-Here are some internet social media button to impress your friends: 
+Here are some internet social media buttons to impress your friends: 
 
