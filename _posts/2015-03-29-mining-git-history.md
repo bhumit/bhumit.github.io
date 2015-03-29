@@ -8,9 +8,9 @@ Software repositories contain valuable information that is not only useful to re
 
 According to Andrew Hunt and David Thomas, a well architectured software design has a critical concept called Orthogonality. They believe, it produces systems that are easy to design, build, test, and extend [[2]]. This is what Yourdon and Constantine called cohesion [[3]]. I examined the Publisher project with the help of a visualiser tool called Gource [[4]]. Upon inspection, I found that, this project contained very well structured module. Developers seem to follow TDD approach. I also observed, after adding a feature, the developer would subsequently test that feature by updating the unit test directory. Also, as this is an Open Source Software, We can see that the common life-cycle of an OSS iteration:
 
-> 1. Report bug.
-> 2. Developer is tasked or code pull request is submitted.
-> 3. Change is committed to the code base.
+ 1. Report bug.
+ 2. Developer is tasked or code pull request is submitted.
+ 3. Change is committed to the code base.
 
 This fits tightly to the highly iterative implementation, testing, and maintenance loop [[5]]. Nevertheless, this iterative process happened later during stages of the product lifecycle as the it became stable . I have created a video which depicts the visualization of the project from the beginning [see below]. By visual analysis, we can deduce that, there exists roughly same amount of tests as there are classes. The visualisation shows addition of unit tests, functional tests, integration tests. Through observations, I believe that the Publisher project is very well architected as you can see the separation of concerns just by the visualisation.
 
@@ -31,7 +31,7 @@ $$
 
 As we can see, \\( N \\) is a subset of \\( M \\), therefore, the range should be within 0–1. From the OCP rules, we can deduce that the lower the frequency is, the better architecture is designed.
 
-|Open Source Projects          | \\(freq\\)             |
+|*Open Source Projects          | \\(freq\\)             |
 -------------------------------|------------------------|
 |Ruby Programming Language     | 0.6387                 |
 |Publisher                     | 0.5783                 |
