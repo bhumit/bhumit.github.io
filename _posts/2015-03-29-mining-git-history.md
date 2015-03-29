@@ -25,7 +25,7 @@ Furthermore, software entities should be “*open for extension but close for mo
 $$
 freq = N/M
 $$
-> **Where:**
+**Where:**
 \\( M \\) is the number of commits in which features were added
 \\( N \\) is the number of commits where changes took place while adding features
 
