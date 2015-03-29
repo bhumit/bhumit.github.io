@@ -1,5 +1,5 @@
 ---
-publish: false
+published: false
 layout: post
 title: jMock and Mockito
 ---
