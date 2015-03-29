@@ -5,9 +5,9 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
   {% if page.content | readtime == 0 %}
-      less than a minute
+      less than a minute read
     {% else %}
-      about {{ page.content | readtime }} minutes
+      {{ page.content | readtime }} minutes read
   {% endif %}
   
   <div class="date">
