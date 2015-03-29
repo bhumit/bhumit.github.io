@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Can version control history data identify if a system is well architected?
 ---
