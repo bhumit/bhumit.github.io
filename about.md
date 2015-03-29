@@ -1,12 +1,8 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
-
-Some information about you!
-
-### More Information
 
 Hi there!
 
