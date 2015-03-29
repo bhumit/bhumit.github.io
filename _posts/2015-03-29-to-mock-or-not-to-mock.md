@@ -24,3 +24,7 @@ But...Ultimately, there is *“No Silver Bullet”*.
   [^2]: http://www.martinfowler.com/bliki/TestDouble.html
   [^3]: https://www.github.com/xaviershay/rspecfire
   [^4]: http://www.jmock.org/oopsla2004.pdf
+
+---
+Here are some internet social media button to impress your friends: 
+

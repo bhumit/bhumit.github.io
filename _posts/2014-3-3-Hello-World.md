@@ -9,3 +9,7 @@ It’s been a long time since i wanted to build my own blog and there’s nothin
 
 Cya 
 ![alt text](https://raw.githubusercontent.com/bhumit/bhumit.github.io/master/images/Now-Later.jpg "later")
+
+---
+Here are some internet social media button to impress your friends: 
+
