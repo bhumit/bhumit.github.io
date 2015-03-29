@@ -22,9 +22,6 @@ But...Ultimately, there is “No Silver Bullet”.
 
 
   [1]: [Boundaries][www.destroyallsoftware.com/talks/boundaries]
-
   [2]: [Test Doubles][www.martinfowler.com/bliki/TestDouble.html]
-
   [3]: [To the point where there are tools dedicated to avoiding this issue][github.com/xaviershay/rspecfire]
-
   [4]: [In ***Mock Roles, not Objects*** (2004) Freeman et. al. say an advantage of upfront specifications is that the test failures occur at the point where the condition is violated. In our experience this benefit is outweighed by the conceptually simpler nature of record then verify.][www.jmock.org/oopsla2004.pdf]
