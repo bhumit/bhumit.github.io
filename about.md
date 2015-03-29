@@ -8,8 +8,13 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Hi there!
 
-### Contact me
+Bhumit here.
 
-[email@domain.com](mailto:email@domain.com)
+By day, I am a Computer Science student pursuing my Master's degree (MSc Computing Science) at [Imperial College London](http://en.wikipedia.org/wiki/Imperial_College_London), with a specialism in Software Engineering. I have huge interest in designing software the right way. After churning through lots of research papers on scalable distributed systems design, my interest is to work on one. Having said that, please feel to take a look at my [CV](https://www.dropbox.com/s/uxgohh1xhcp1kdn/resume.pdf)
+
+By night, I am a 
+- Part time book worm
+- Chronic night owl
+- avid Sudoku player
