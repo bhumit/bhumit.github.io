@@ -13,9 +13,9 @@ According to Andrew Hunt and David Thomas, a well architectured software design 
  3. Change is committed to the code base.
 
 This fits tightly to the highly iterative implementation, testing, and maintenance loop [[5]]. Nevertheless, this iterative process happened later during stages of the product lifecycle as the it became stable . I have created a video which depicts the visualization of the project from the beginning [see below]. By visual analysis, we can deduce that, there exists roughly same amount of tests as there are classes. The visualisation shows addition of unit tests, functional tests, integration tests. Through observations, I believe that the Publisher project is very well architected as you can see the separation of concerns just by the visualisation.
-
+<p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Nm8RbKennWg" frameborder="0" allowfullscreen></iframe>
-
+</p>
 A well designed and stable architecture also conforms to **OCP** (Open-Closed Principle), hence, whether a system follows OCP patterns strictly enough is a simple way to evaluate the quality of its architecture design[[7]]. The *Single-Responsibility Principle* of OCP says that 
 
 > “A class should have only one reason to change”[[8]]. 
@@ -30,7 +30,7 @@ $$
 \\( N \\) is the number of commits where changes took place while adding features
 
 As we can see, \\( N \\) is a subset of \\( M \\), therefore, the range should be within 0–1. From the OCP rules, we can deduce that the lower the frequency is, the better architecture is designed.
-<p align="center">
+
  | **Open Source Projects**      |**\\(freq\\)**  |
 |:---------------------------|:------:|
 | Ruby Programming Language | 0.6387 |
@@ -42,8 +42,6 @@ As we can see, \\( N \\) is a subset of \\( M \\), therefore, the range should b
 | Gov.UK Rummager           | 0.7244 |
 | Gov.UK Signonotron2       | 0.4865 |
 [Table 1: shows the model being applied to various open source projects with \\(freq\\).]
-</p>
-
 
 From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [[8]]. However, the \\(freq\\) value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [[7]].
 
