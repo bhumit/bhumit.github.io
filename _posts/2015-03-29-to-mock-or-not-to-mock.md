@@ -24,10 +24,10 @@ But...Ultimately, there is “No Silver Bullet”.
 
 **Footnotes:**
 
-  [1]: destroyallsoftware.com/talks/boundaries
+  [1]: [destroyallsoftware.com/talks/boundaries]
 
-  [2]: www.martinfowler.com/bliki/TestDouble.html
+  [2]: [www.martinfowler.com/bliki/TestDouble.html]
 
-  [3]: github.com/xaviershay/rspecfire
+  [3]: [github.com/xaviershay/rspecfire]
 
-  [4]: www.jmock.org/oopsla2004.pdf
+  [4]: [www.jmock.org/oopsla2004.pdf]
