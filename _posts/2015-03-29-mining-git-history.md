@@ -49,6 +49,7 @@ From the table above, we can observe that although these projects have been open
 
 Although, I think this model is only theoretically effective, due to accidental and essential complexity [[7]]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
 
+The little script below which was written in Java shows how the **\\(freq\\)** was produced. The input to the script is a *csv* file containing all commit hashes of the particular project of version control system. You can get all the commit hashes from the git repository using the command `git log -n 1 --pretty=format:"%H" > commit-hashes.txt`.
 ```java
 import java.io.*;
 import java.util.ArrayList;
@@ -115,6 +116,8 @@ public class Main {
     }
 }
 ```
+
+Anyhow, I hope you enjoyed reading this. Feel free to comment any suggestions you have or as matter of fact anything you want to ask me. Cya next time!
 
   [1]: http://swerl.tudelft.nl/twiki/pub/Main/KoenEgelink/Masters_Thesis_Koen_Egelink_PUBLIC_BANNER.pdf "K. Egelink, Multi-Version Software Analysis to Detect Architectural Mismatches."
   [2]: http://www.amazon.co.uk/The-Pragmatic-Programmer-Andrew-Hunt/dp/020161622X "A. Hunt and D. Thomas, The Pragmatic Programmer: From Journeyman to Master."
