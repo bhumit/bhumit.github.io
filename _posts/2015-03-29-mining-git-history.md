@@ -54,17 +54,22 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Main {
-    static ArrayList al = new ArrayList(); // array that contains all record pairs: hash-status
-    static ArrayList addArray = new ArrayList(); // array that contains unique hash whose commit added something
-    static ArrayList changeArray = new ArrayList(); // array that contains unique hash whose commit changed something after adding features
+    // store all the hash-status
+    static ArrayList al = new ArrayList(); 
+    // store that contains unique hash whose commit added something
+    static ArrayList addArray = new ArrayList();
+    // store that contains unique hash whose commit changed something after
+    static ArrayList changeArray = new ArrayList();
 
     public static void main(String[] args) {
         readData();
         calcAdds();
         calcChangesInAdds();
         // get ratio, the lower the better architecture.
-        // since if well formed, theoretically, adding features doesn't require any modification
-        System.out.println("The ratio is: " + (1.0 * changeArray.size() / addArray.size()));
+        // since if well formed, theoretically, 
+        //adding features doesn't require any modification
+        System.out.println("The ratio is: " + 
+        (1.0 * changeArray.size() / addArray.size()));
     }
 
     private static void readData(){
