@@ -20,7 +20,7 @@ So *jMock* and *Mockito* are equally powerful but *Mockito’s* philosophy resul
 But...Ultimately, there is “No Silver Bullet”.
 
 
-...
+---
 
 **Footnotes:**
 
