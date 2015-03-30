@@ -16,7 +16,6 @@ permalink: /reading-list/
 * Clean Code - A Handbook of Agile Software Craftsmanship by Uncle Bob
 * Programming Pearls by *Jon Bentley*
 * Data Structures and Algorithms in Java by *Robert Lafore*
-* 
 
 ### Research Papers
 
