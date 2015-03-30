@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Reading List
+title: Resources which I have aggregated over the years
 permalink: /reading-list/
 ---
 
-# Resources
 
 ### Books
 
