@@ -18,6 +18,6 @@ permalink: /reading-list/
 
 ### Research Papers
 
-* *Google BigTable* **[Bigtable: A Distributed Storage System for Structured Data]**(http://research.google.com/archive/bigtable-osdi06.pdf), Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E. Gruber, Seventh Symposium on Operating System Design and Implementation (OSDI), Seattle, WA, November, 2006.
+* *Google BigTable* **[Bigtable: A Distributed Storage System for Structured Data]**[http://research.google.com/archive/bigtable-osdi06.pdf], Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E. Gruber, Seventh Symposium on Operating System Design and Implementation (OSDI), Seattle, WA, November, 2006.
 
 the list goes on...
