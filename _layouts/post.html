@@ -4,11 +4,7 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-  {% if page.content | readtime == 0 %}
-      less than a minute read
-    {% else %}
-      {{ page.content | readtime }} minutes read
-  {% endif %}
+  Reading time: % include reading_time.html %}
   
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
