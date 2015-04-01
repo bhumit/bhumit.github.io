@@ -32,22 +32,22 @@ $$
 As we can see, \\( N \\) is a subset of \\( M \\), therefore, the range should be within 0–1. From the OCP rules, we can deduce that the lower the frequency is, the better architecture is designed.
 
 
-| Open Source Projects          |  **\\(freq\\)**     |
-|---------------------------    |:------:   |
-| Ruby Programming Language     | 0.6387    |
-| Publisher                     | 0.5783    |
-| Gov.uk Frontend               | 0.5333    |
-| Gov.uk Transition             | 0.6729    |
-| Gov.uk Collections            | 0.4815    |
-| Gov.uk EFG                    | 0.7132    |
-| Gov.uk Rummager               | 0.7244    |
-| Gov.uk Signonotron2           | 0.4865    |
+| **Open Source Projects**      |**\\(freq\\)**  |
+|:---------------------------|:------:|
+| Ruby Programming Language | 0.6387 |
+| Publisher                 | 0.5783 |
+| Gov.UK Frontend           | 0.5333 |
+| Gov.UK Transition         | 0.6729 |
+| Gov.UK Collections        | 0.4815 |
+| Gov.UK EFG                | 0.7132 |
+| Gov.UK Rummager           | 0.7244 |
+| Gov.UK Signonotron2       | 0.4865 |
 [Table 1: shows the model being applied to various open source projects with \\(freq\\).]
 
 
 From the table above, we can observe that although these projects have been open source for years and supposed to be well structured [[8]]. However, the \\(freq\\) value suggests that none of these projects has followed the OCP rules strictly. Nevertheless, I believe that there may be other factors that influence this value. For example, a developer forgets to commit right after he/she has added some features but directly modified other classes to fix some bugs, and then commit all the changes at one time. Relatively, the project [Signonotron2](https://github.com/alphagov/signonotron2) should have a better design. Compared with other projects, generally, publisher has a good architecture according to OCP rules [[7]].
 
-Although, I think this model is only theoretically effective, due to accidental and essential complexity [7]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
+Although, I think this model is only theoretically effective, due to accidental and essential complexity [[7]]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
 
 The little script below which was written in Java shows how the **\\(freq\\)** was produced. The input to the script is a *csv* file containing all commit hashes of the particular project of version control system. You can get all the commit hashes from the git repository using the command:
 > `git log -n 1 --pretty=format:"%H" > commit-hashes.txt`.
@@ -128,7 +128,7 @@ Anyhow, I hope you enjoyed reading this. Feel free to comment any suggestions yo
   [4]: https://github.com/acaudwell/Gource "Gource"
   [5]: http://dl.acm.org/citation.cfm?id=2656440 "Software architecture model driven reverse engineering approach to open source software development"
   [6]: https://www.youtube.com/watch?v=Nm8RbKennWg "Gource on publisher alphagov"
-  [^7]: https://worrydream.com/refs/Brooks-NoSilverBullet.pdf "Essence and accidents of software engineering"
+  [7]: https://worrydream.com/refs/Brooks-NoSilverBullet.pdf "Essence and accidents of software engineering"
   [8]: https://www.gov.uk/service-manual/making-software/open-source.html "Using open source software"
   
 ---
