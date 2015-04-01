@@ -50,7 +50,7 @@ From the table above, we can observe that although these projects have been open
 Although, I think this model is only theoretically effective, due to accidental and essential complexity [[7]]. It is still a straight-forward method to do the evaluation job which inversely helps refining the architecture design.
 
 The little script below which was written in Java shows how the **\\(freq\\)** was produced. The input to the script is a *csv* file containing all commit hashes of the particular project of version control system. You can get all the commit hashes from the git repository using the command:
-> `git log -n 1 --pretty=format:"%H" > commit-hashes.txt`.
+> `git log -n 1 --pretty=format:"%H" > commit-hashes.txt`
 
 
 ```java
