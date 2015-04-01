@@ -3,6 +3,7 @@ layout: post
 title: What is the difference between Behaviour-driven Development and Test-driven Development?
 ---
 ![alt text]({{ site.baseurl }}/images/tdd.png "Test driven development")
+
 ##Difference between TDD & BDD
 
 According to Josh Davis, BDD is just TDD but with better guidelines which is meant, but not guaranteed, to eliminate issues that TDD might cause, for example, poor code organization, design practices, etc.[[2]]
@@ -12,6 +13,7 @@ Before you read further, follow the links below for some basic resources to get 
 - http://blog.mattwynne.net/2013/08/21/what-is-bdd-and-why-should-i-care-video/
 - http://dannorth.net/introducing-bdd/
 - http://gojko.net/2010/03/01/are-tools-necessary-for-acceptance-testing-or-are-they-just-evil/
+
 ##Misconceptions about BDD and TDD
 
 1. **The client doesn’t care about testing.**
@@ -23,11 +25,9 @@ In BDD, heterogeneous people need advice from others who knows what they are doi
 3. **You can achieve the same without a business readable Domain Specific Language (DSL).**
 Writing in natural language is about improving communication within the team. So that the team can brainstorm together about the best path to transform a specification into business needs. It is driven to prevent communication gaps.[[3]]
 
-
 ##Are Tests Specification?
 
 TDD provides an interesting double-check mechanism.[[4]] With TDD, every programmer states his/her intent twice; once in the unit test and once in the production code. Only if they match do we get a green bar.[[5]] Whereas, combining Specification By Example with production code means that you have both things said quite differently, which increases their ability to find errors.[[6]] Also the use of ubiquitous language helps describe the behaviour which ultimately helps building a shared understanding of the product.[[7]]
-
 
 ##TDD/BDD as architectural tools? Any difference?
 
