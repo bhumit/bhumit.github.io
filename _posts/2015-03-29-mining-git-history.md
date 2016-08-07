@@ -32,16 +32,16 @@ $$
 As we can see, \\( N \\) is a subset of \\( M \\), therefore, the range should be within 0–1. From the OCP rules, we can deduce that the lower the frequency is, the better architecture is designed.
 
 
-| **Open Source Projects**      |**\\(freq\\)**  |
-|:---------------------------|:------:|
-| Ruby Programming Language | 0.6387 |
-| Publisher                 | 0.5783 |
-| Gov.UK Frontend           | 0.5333 |
-| Gov.UK Transition         | 0.6729 |
-| Gov.UK Collections        | 0.4815 |
-| Gov.UK EFG                | 0.7132 |
-| Gov.UK Rummager           | 0.7244 |
-| Gov.UK Signonotron2       | 0.4865 |
+**Open Source Projects**    |**\\(freq\\)**
+----------------------------|------
+Ruby Programming Language   | 0.6387
+Publisher                   | 0.5783
+Gov.UK Frontend             | 0.5333
+Gov.UK Transition           | 0.6729
+Gov.UK Collections          | 0.4815
+Gov.UK EFG                  | 0.7132
+Gov.UK Rummager             | 0.7244
+Gov.UK Signonotron2         | 0.4865
 [Table 1: shows the model being applied to various open source projects with \\(freq\\).]
 
 
